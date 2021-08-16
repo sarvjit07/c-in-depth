@@ -1,0 +1,61 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+
+}
+
+.flex-item {
+    
+    width: 30%;
+    margin: 1rem;
+    border: 2px #D4D2D4 solid;
+    box-shadow: 5px 5px 5px #aaaaaa;
+
+
+}
+
+/* Flexbox for inside of card */
+
+.inner-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.inner-flex-item {
+    padding: 0rem;
+
+}
+
+.inner-flex-item img{
+
+    max-width: 100%;
+    max-height: 100%;
+      
+}
+
+h1 {
+  text-align: centeer;  
+}
+
+p {
+    font-size: 2rem;
+    margin: 2rem;
+}
+button {
+
+    margin: 2rem;
+    font-size: 150%;
+    color: white;
+    background-color: #696869;
+    padding: 10px 30px;
+    padding-left: 130px;
+    padding-right: 130px;
+}

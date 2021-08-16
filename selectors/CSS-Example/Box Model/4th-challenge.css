@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body{
+    /* I've set an Image in my background of body from a URL */
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/08/08/59/background-1503863_960_720.png");
+    /* I've set margin to '0px' in order to remove any gaps from my page.*/
+    margin: 0px;
+}
+
+header{
+    /* display:flex; generally align all elements in a single line */
+    display: flex;
+    width: 100%;
+    /* I've assigned margin to auto because I want to align element in the center */
+    margin: auto;
+    height: 200px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+
+    /* To align my element in center in X-axis and Y-axis, I've done this given below things */
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-family: Coda caption;
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: rgb(26, 26, 77);
+    padding: 30px;
+
+    /* If you wanna to make your navigation bar sticky when you scrool down the page, than you've to set it's postion to sticky and than you've to set it's top value to '0px' */
+    position: sticky;
+    /* top:0px means your navigation bar will be sticky when it reach at 0px from top of your body */
+    top:0px;
+}
+
+nav a{
+    color: white;
+    padding: 30px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:gold;
+    text-decoration: underline;
+}
+
+.container h1{
+    font-family: PT sans;
+    padding: 10px 40px;
+    color: white;
+
+    /* I've set text-transform: uppercase; because I wnat to make my every book's title in uppercase. */
+    /* Yes I also know that I can do it by typing everything in capital but this is more easy and time saving way */
+    text-transform: uppercase;
+
+    /* this below line will add a black shadow in the background of my text */
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.container h1:hover{
+    text-decoration: underline;
+}
+
+.summary{
+    background-color:lightseagreen;
+    border: solid 5px lightcoral;
+    padding: 40px;
+    font-family: Merriweather;
+}
+
+.summary:hover{
+    /* when anyone hover on the summary, than this below line will add a black color shadow in the backgroung of that box */
+    box-shadow: 0px 0px 10px black;
+}
